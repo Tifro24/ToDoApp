@@ -16,7 +16,7 @@ public class TaskService {
     }
 
     public void addTask(String title){
-        if(title.isBlank() || title == null){
+        if(title.isBlank()){
             throw new IllegalArgumentException("Title must not be blank");
         }
         else{
